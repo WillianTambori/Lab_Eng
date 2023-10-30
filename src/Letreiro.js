@@ -13,9 +13,9 @@ function Letreiro() {
         }else{
             setNum(0);
         }
-    },1000);
+    },200);
     return ()=>clearInterval(tempo);
-    },[num,texto]);
+    },[num]);
 
     for(let i=0;i<=num;i++){
       array.push(texto[i]);
@@ -23,10 +23,10 @@ function Letreiro() {
  
 
   return (
-      <h1>{
+      <h2>{
         texto.slice(0,num+1)
         }
-      </h1>
+      </h2>
     );
 
 }

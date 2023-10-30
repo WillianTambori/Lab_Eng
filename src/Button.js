@@ -2,12 +2,14 @@ import React,{useState} from "react";
 
 
 
-export default function Button({botao,onClick}){
+
+
+export default function Button({botao,conteudo,onClick}){
    
     return(
         <>
-        <button  onClick={onClick}>
-            {botao}
+        <button id= {botao}  onClick={onClick}>
+            {conteudo}
         </button>
         </>
     );

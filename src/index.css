@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#menos{
+  background-color: red;
+  color: white;
+  border-radius: 30%;
+  height: 5vh;
+  width: 5vh;
+  content: "-";
+}
+
+#mais{
+  background-color: green;
+  color: white;
+  border-radius: 30%;
+  height: 5vh;
+  width: 5vh;
+}
+#ladoLado{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 700px;
+  margin: auto;
+}
+
+#Centralizado{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 25%;
+  margin: auto;
+  
+  
+}
+h1{
+  padding: 5px;
+  margin: 5px auto;
+  width: 300px;
+  justify-items: center;
+  box-shadow: 0 1px 4px #000;
+  text-align: center;
+}
+h2{
+  padding: 5px;
+  margin: 5px auto;
+  width: 300px;
+  justify-items: center;
+  box-shadow: 0 1px 4px #000;
+  text-align: center;
+}

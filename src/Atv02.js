@@ -3,7 +3,7 @@ import { Link} from "react-router-dom";
 import Button from "./Button";
 import mulher from './mulher.png';
 import homem from './homem.png';
-//import { Button } from 'reactstrap';
+
 
 
 export default function Atv02(props){
@@ -32,22 +32,31 @@ const [contadorH, setCH] = useState(0);
       }
     return (
         <>
-            <h1>Atividade 02</h1>
-            <p>{contador}</p>
-            <div className="pessoas">
-                
-                <h1>homem</h1>
-                <img src={homem} />
-                <h1>{contadorH}</h1>
-                <Button botao={"+"} onClick={MaisH} />
-                <Button botao={"-"} onClick={MenosH} />     
             
-                <h1>mulher</h1>
+
+            <h1>Atividade 02</h1>
+            <h1>Total</h1>
+            <h1>{contador}</h1>
+            <br/>
+            <div id="ladoLado">
+                <div id="Centralizado">
+                <img src={homem} />
+                <Button botao={"mais"} conteudo={"+"} onClick={MaisH} />
+                <Button botao={"menos"} conteudo={"-"} onClick={MenosH} />     
+                <h1>Homem</h1>
+                <h1>{contadorH}</h1>
+                </div>
+
+                <div id="Centralizado">
                 <img src={mulher} />
+                <br/>
+                <Button botao={"mais"} conteudo={"+"} onClick={MaisM} />
+                <Button botao={"menos"} conteudo={"-"}onClick={MenosM} />    
+                <h1>Mulher</h1>
                 <h1>{contadorM}</h1>
-                <Button botao={"+"} onClick={MaisM} />
-                <Button botao={"-"} onClick={MenosM} />    
+                </div>
             </div>
+          
             
             <br/><br/>        
             <Link to="/">retorna a página principal</Link>
