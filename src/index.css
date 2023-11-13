@@ -70,3 +70,18 @@ h2{
   
   
 }
+.photo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  margin: 15px  auto;
+}
+
+.avatar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+  margin: 15px  auto;
+}
