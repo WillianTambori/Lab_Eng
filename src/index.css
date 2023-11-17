@@ -85,3 +85,67 @@ h2{
   width: 200px;
   margin: 15px  auto;
 }
+
+.Calculadora{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 34vh;
+  height: 50vh;
+  background-color: #000000;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+#Bt{
+  background-color:#333333;
+  color: white;
+  border-radius: 20%;
+  height: 6vh;
+  width: 8vh;
+  margin: 2px;
+  font-size: xxx-large;
+
+
+}
+
+#Btz{
+  background-color:#333333;
+  color: white;
+  border-radius: 20%;
+  height: 6vh;
+  width: 16vh;
+  margin: 3px;
+  font-size: xxx-large;
+
+
+}
+#Btc{
+  background-color:#a5a5a5;
+  color: white;
+  border-radius: 20%;
+  height: 6vh;
+  width: 8vh;
+  margin: 2px;
+  font-size: xxx-large;
+
+}
+#Bta{
+  background-color:#ff9a00;
+  color: white;
+  border-radius: 20%;
+  height: 6vh;
+  width: 8vh;
+  margin: 3px;
+  font-size: xxx-large;
+
+
+}
+#res{
+  width: 35vh;
+  height: 6vh;
+  color: white;
+  font-size: xxx-large;
+  margin: 10px;
+}
