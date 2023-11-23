@@ -149,3 +149,37 @@ h2{
   font-size: xxx-large;
   margin: 10px;
 }
+
+.memoria{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width:650px;
+  height: 92vh;
+  background-color: #000;
+  margin: 10px auto;
+}
+
+#memo{
+  color: white;
+  width: 600px;
+  height: 4vh;
+}
+#card{
+  width:150px;
+  height: 18vh;
+  margin: 6px;
+  background-color: white;
+  color: white;
+}
+
+#Bcard{
+  background-color:#130f86;
+  color: white;
+  border-radius: 20%;
+  height: 6vh;
+  width: 40vh;
+  margin: 3px;
+  font-size: xxx-large;
+}
