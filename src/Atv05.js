@@ -28,12 +28,12 @@ export default function Atv05(){
         const A = baralho;
         const B = baralhoB;
         B[v] = A[v];
-        if(acerto === 8){
-            window.alert("vc ganhou");
-            window.location.reload();
-        }
         setBaralhoB(B);
         if(A[ind] === B[v] && ind !== v){
+            if(acerto === 7){
+                window.alert("vc ganhou");
+                window.location.reload();
+            }
             return (setInd(20),setAcerto(acerto+1));
             
         }
