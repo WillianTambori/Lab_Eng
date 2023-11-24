@@ -57,7 +57,6 @@ export default function Atv05(){
         
         <div className="memoria">
         <h1 id="memo" >Jogo da memoria</h1>
-        <Button botao={"Bcard"} conteudo={"BARALHAR"} onClick={Baralhar} />
         <div> {cartas} </div>
         </div>
         <br/><br/>        

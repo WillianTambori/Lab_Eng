@@ -10,6 +10,13 @@ export default function Atv04(){
     const [ Ponto, setPonto] = useState(0);
 
     function Calculo(v){
+        if(v === "+/-"){
+            if(Cal === "C"){
+                return setNa(Na*(-1));
+            }else{
+                return setNb(Nb*(-1));
+            }
+        }
         if(v === "."){
             return setPonto(Ponto +1)
         }
@@ -17,6 +24,7 @@ export default function Atv04(){
             return (setNa(0),setNb(0),setCal("C"),setPonto(false));
         }
         if(Cal === "C"){
+            
             if(Number.isInteger(v)){
                 if(Ponto > 0){
                     setPonto(Ponto+1);
@@ -27,6 +35,7 @@ export default function Atv04(){
             }
             return(setCal(v),setPonto(0));
         }
+        
         if(Number.isInteger(v)){
             if(Ponto > 0){
                 setPonto(Ponto+1);
@@ -35,13 +44,7 @@ export default function Atv04(){
             return setNb((Nb*10)+v);
         }
         if(!Number.isInteger(v)){
-            if(v === "+/-"){
-                if(Cal === "+"){
-                    return setCal("-");
-                }else{
-                    return setCal("+");
-                }
-            };
+            
             switch(Cal){
                 case "+":
                 setNa(Na + Nb);
@@ -67,10 +70,12 @@ export default function Atv04(){
             return( setCal(v),setNb(0),setPonto(0));
         }
     }
+
     return(
 
         <>
         <h1>Calculadora</h1>
+        <p>{Cal}</p>
         <div className="Calculadora">
             <Calculadora Na={Na} Nb={Nb} Cal={Cal} />
             <Button botao="Btc" conteudo={"C"} onClick={()=> Calculo("C")} />
